@@ -6,120 +6,175 @@ Green: #00B172
 White: #FFF
 
 */
-*{
-    font-family: 'Roboto', sans-serif;
-}
-body{
+
+h1, h2, h3, h4, h5,
+p, ul, a, nav, header, body{
     margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-family: sans-serif;
+    text-decoration: none;
 }
-nav{
-    width: 100vw;
+
+nav {
+    height: 10vh;
     display: flex;
     justify-content: space-between;
+    background-color: #fff;
 }
-.img-spotify-logo{
-    height: 5vh;
-    margin: 10px;
+nav a{
+    height: 9vh;
+    
+    color: #1a1a1a;
+}
 
+a img {
+    height: inherit;
+    padding: 0.5vh 0;
 }
-.nav-ul{
-    display: flex;
+
+ul{
+    height: inherit;
     list-style: none;
+    display: flex;
+    align-items: center;
 }
-.nav-li{
-    margin-right: 20px;
+
+li{
+    margin-right: 1em;
 }
+
+li a:hover {
+   color: #fff; 
+}
+
+nav li:hover{
+    background-color: #26b26c;
+    padding: 20px 0;
+}
+
 header{
-    color: #ffffff;
-    height: 95vh;
+    height: 100vh;
+    width: 100vw;
     background-image: url('../images/landing.jpg');
     background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 2rem;
 }
+
 .header{
-    width: 60vw;
+    height: 90vh;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    color: #fff;
 }
-#hdr-p{
+
+.header h1{
+    font-size: 3.5em;
+    font-weight: 500;
+}
+
+.header p {
+    text-align: center;
     font-weight: 100;
-    font-size: 1.5rem;
-    margin: 0;
+    font-size: 1.2em;
+    margin: 1.2em;
 }
-section{
+
+section {
     height: 70vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.section{
+    width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-h2{
-    font-size: 1.9rem;
-    width: max-content;
-}
-.stc-2{
+
+#orange {
+    height: 60vh;
+    width: 90vw;
     display: flex;
-    width: 80vw;
-    justify-content: space-between;
-}
-.stc-2a{
-    width: 20vw;
-    display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
 }
-hr{
-    background-color: #00B172;
-    height: 3px;
+
+.yellow {
+    height: 30vh;
+    width: 30vw;
+    padding: 0 20px;
+    text-align: center;
 }
-h3{
+
+.yellow img{
+    height: 10vh;
+}
+
+.h3-section {
+    border-bottom: 2px solid #00B172;
+    height: fit-content;
+    margin-top: auto;
+}
+
+.h3-section h3 {
+    font-size: 2em;
+    font-weight: 400;
+}
+
+.yellow h4 {
     color: #00B172;
-    font-size: 1.5rem;
-    font-weight: bold;
+    font-size: larger;
+    font-weight: 600;
+    margin: 20px;
 }
-footer{
-    height: 90vh;
-    position: relative;
-}
-.ftr{
-    height: 90vh;
+
+footer {
+    margin: 0 5vw;
     background-color: #00B172;
-    margin: 30px;
+    height: 100vh;
+
+}
+
+.inner-footer{
+    margin: 70px
+}
+
+.inner-footer h3{
+    width: max-content;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: lighter;
+    padding-top: 1em;
+}
+
+.footer-2 img {
+    width: 100px;
+}
+
+.footer-3 img {
+    width: 300px;
+}
+
+article{
     display: flex;
+    flex-direction: column;
+    width: calc(100% - 170px - 30vw);
+    height: calc(100vh - 124px - 1.5em);
+    justify-content: space-around;
+}
+
+.comments{
+
+    color: #fff;
+}
+
+.comments h5{
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+
+.inner-footer-box{
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-}
-.white-logo{
-    height: 15%;
-    position: absolute;
-}
-.ftr-content{
-    position: absolute;
-    top: 0;
-    margin: 5vh 10vh;
-}
-.h2-ftr{
-    color: #ffffff;
-}
-.ftr-b{
-    position: absolute;
-    top: 0;
-    color: #ffffff;
-    margin: 20vh 0 0 10vh;
-}
-.img-ftr{
-    position: absolute;
-    top: 0;
-    height: 70vh;
-    margin: 5% 5% 0 68%;
 }
